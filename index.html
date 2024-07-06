@@ -4,151 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Conference 2024</title>
+  <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-    body {
-      display: flex;
-      flex-direction: column;
-    }
-/*     .main {
-      display: flex;
-      flex: 1;
-    }
- */
-    .main {
-      display: flex;
-      flex: 1;
-      overflow: hidden; /* Prevent content overflow */
-    }
-
-    .header {
-      width: 100%;
-      background-color: #f8f9fa;
-      padding: 10px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-    }
-    .header img {
-      max-height: 140px;
-      
-    }
-
-/*     .sidebar {
-      width: 200px;
-      position: fixed;
-      height: 100%;
-      background-color: #f8f9fa;
-      padding-top: 20px;
-    }
-     */
-    .sidebar {
-      width: 250px;
-      position: fixed;
-
-      top: 150px;
-      bottom: 0; /* Extend sidebar to the bottom */
-      background-color: #f8f9fa;
-      padding-top: 20px;
-      overflow-y: auto; /* Add vertical scrollbar */
-    }
-
-
-    .sidebar a:hover, .sidebar .submenu a:hover {
-      
-      background-color: #ddd;
-      color: #000;
-    }
-    .sidebar .submenu {
-      padding-left: 20px;
-      
-    }
-/*     .content {
-      margin-left: 250px;
-      padding: 20px;
-      width: 100%;
-      margin-top: 60px;
-    } */
-    .content {
-      margin-left: 250px;
-      padding: 20px;
-      width: calc(100% - 250px);
-      overflow-y: auto; /* Add vertical scrollbar to content */
-      margin-top: 20px;
-    }
-
-
-    .sidebar a, .sidebar .submenu a {
-
-      padding: 5px 10px; /* Reduce padding */
-      font-size: 18px;
-      margin: 0; /* Remove margin */
-      display: block;
-    }
-
-    .sidebar .submenu a {
-
-    padding: 5px 10px; /* Reduce padding */
-    font-size: 14px;
-    color:green;
-    margin: 0; /* Remove margin */
-    display: block;
-    }
-    .section {
-      margin-bottom: 50px;
-      color: #3B5998;
-    }
-
-    .banner {
-      width: 100%;
-      height: auto;
-      margin-bottom: 50px;
-    }
-
-    .pdf-container {
-      width: 100%;
-      height: 600px;
-    }
-
-    .fa {
-    padding: 10px;
-    font-size: 30px;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 20%;
-    }
-
-    .fa:hover {
-        opacity: 0.7;
-    }
-
-    .fa-facebook {
-      background: #3B5998;
-      color: white;
-     }
-    .ul {
-        padding: 10px;
-        font-size: 30px;
-        width: 50px;
-        height: 50px;
-        text-align: center;
-        text-decoration: none;
-        margin: 5px 2px;
-        
-    }
-
-    footer {
-    text-align: center;
-    padding: 3px;
-    background-color: rgb(86, 158, 241);
-    color: white;
-   }
-  </style>
+  
 </head>
 <body>
 
@@ -181,14 +40,14 @@
   </div>
 
   <div class="content">
-      <div class="jumbotron text-center section">
-      <h3>المؤتمر السنوي لمركز الدراسات والأبحاث التربوية في كلية التربية - الجامعة اللبنانية 
+      <div class="jumbotron text-center section" style="direction: rtl;">
+        <h3>المؤتمر السنوي لمركز الدراسات والأبحاث التربوية في كلية التربية - الجامعة اللبنانية 
 
-      </h3>
-      <h1 style="color:blue;">
-      "تحولات التربية والتعليم في زمن الذكاء الاصطناعي: الفرص والآفاق والتحديات"
-      </h1>
-      <p style="font-weight: bold;">الجامعة اللبنانية في 12 حزيران 2024 </p>
+        </h3>
+        <h1 style="color:blue;">
+        "تحولات التربية والتعليم في زمن الذكاء الاصطناعي: الفرص والآفاق والتحديات"
+        </h1>
+        <p style="font-weight: bold;">الجامعة اللبنانية في 12 حزيران 2024 </p>
       </div>
 
       <div>
@@ -214,14 +73,14 @@
 
 
       <div id="deanSpeech" class="container section">
-        <h2>Dean of Faculty of Education Speech</h2>
+        <h2>Speech of the dean of Faculty of Education</h2>
         <img src="./Photos/DeanSpeech1.jpg" alt="Speech" class="banner section">
         <img src="./Photos/DeanSpeech2.jpg" alt="Speech" class="banner section">
         <img src="./Photos/DeanSpeech3.jpg" alt="Speech" class="banner section">
       </div>
 
       <div id="cersSpeech" class="container section">
-        <h2>President of CERS Speech</h2>
+        <h2>Speech of the president of the Centre for Education Research and Studies (CERS)</h2>
         <img src="./Photos/CERSspeech1.jpg" alt="Speech" class="banner section">
         <img src="./Photos/CERSspeech2.jpg" alt="Speech" class="banner section">
         <img src="./Photos/CERSspeech3.jpg" alt="Speech" class="banner section">
@@ -2195,7 +2054,7 @@
       <p>For any inquiries, please email us at <a href="mailto:cerp.education@ul.edu.lb">cerp.education@ul.edu.lb</a> </p>
     </div>
     <footer>
-      <p>© Copyright, Lebanese University - Faculty of Pedagogy</p>
+      <p>© Copyright, Lebanese University - Faculty of Education</p>
     </footer>
   </div>
   
