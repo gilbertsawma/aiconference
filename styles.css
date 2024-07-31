@@ -71,15 +71,8 @@ body {
   }
 
 
+
   .sidebar a, .sidebar .submenu a {
-
-    padding: 5px 10px; /* Reduce padding */
-    font-size: 18px;
-    margin: 0; /* Remove margin */
-    display: block;
-  }
-
-  .sidebar .submenu a {
 
   padding: 5px 10px; /* Reduce padding */
   font-size: 14px;
@@ -146,11 +139,34 @@ body {
         flex-direction: column;
     }
 
-/*     .sidebar {
-        width: 100px;
-        height: auto;
-        position: relative;
-    } */
+    .sidebar {
+      width: 150px;
+      position: fixed;
+  
+      top: 150px;
+      bottom: 0; /* Extend sidebar to the bottom */
+      background-color: #f8f9fa;
+      padding-top: 20px;
+      overflow-y: auto; /* Add vertical scrollbar */
+    }
+
+    .sidebar a, .sidebar .submenu a {
+
+      padding: 5px 10px; /* Reduce padding */
+      font-size:1.5vw;
+      color:green;
+      margin: 0; /* Remove margin */
+      display: block;
+      }
+
+      .content {
+        margin-left: 150px;
+        padding: 20px;
+        width: calc(100% - 1.5vw);
+        overflow-y: auto; /* Add vertical scrollbar to content */
+        margin-top: 10px;
+      }
+
 
     main {
         margin-left: 0;
