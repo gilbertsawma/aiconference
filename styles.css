@@ -87,6 +87,7 @@ body {
   margin: 0; /* Remove margin */
   display: block;
   }
+  
   .section {
     margin-bottom: 50px;
     color: #3B5998;
@@ -145,11 +146,11 @@ body {
         flex-direction: column;
     }
 
-    .sidebar {
-        width: 100%;
+/*     .sidebar {
+        width: 100px;
         height: auto;
         position: relative;
-    }
+    } */
 
     main {
         margin-left: 0;
