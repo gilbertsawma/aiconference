@@ -86,6 +86,7 @@ body {
     color: #3B5998;
   }
 
+
   .banner {
     width: 100%;
     height: auto;
@@ -167,6 +168,10 @@ body {
         margin-top: 10px;
       }
 
+      .confTitle h1,.confTitle h3{
+        font-size: 2vw;
+      }
+    
 
     main {
         margin-left: 0;
