@@ -168,9 +168,13 @@ body {
         margin-top: 10px;
       }
 
-      .confTitle h1,.confTitle h3{
-        font-size: 2vw;
-      }
+      .confTitle h1{
+                font-size: 5vw;    
+        }
+      
+        .confTitle h3{
+                font-size: 3vw;    
+        }
     
   .header img {
     max-height: 100px;
