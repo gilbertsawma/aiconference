@@ -1,0 +1,231 @@
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    position: fixed; /* or sticky */
+    width: 100%;
+    /* background-color: #333; */
+    /* padding: 1rem; */
+    padding: 10px 0; /* Adjust padding as needed */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1000;
+    background-color: #fff;
+}
+
+
+
+  .logo {
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .logo img {
+    max-height: 140px;
+    
+  }
+
+
+.main {
+    display: flex;
+    width: 100%;
+}
+
+/* .sidebar {
+    background-color: #444;
+    color: white;
+    width: 250px;
+    flex-shrink: 0;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 80px; 
+    overflow-y: auto;
+    transition: transform 0.3s ease;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.sidebar .submenu {
+    display: none;
+    padding-left: 20px;
+} */
+
+
+
+.sidebar {
+    width: 250px;
+    position: fixed;
+
+    top: 150px;
+    bottom: 0; /* Extend sidebar to the bottom */
+    background-color: #f8f9fa;
+    padding-top: 20px;
+    overflow-y: auto; /* Add vertical scrollbar */
+    z-index: 1000;
+  }
+
+
+.sidebar a, .sidebar .submenu a {
+
+    padding: 5px 10px; /* Reduce padding */
+    font-size: 18px;
+    margin: 0; /* Remove margin */
+    display: block;
+  }
+
+  .sidebar .submenu a {
+
+  padding: 5px 10px; /* Reduce padding */
+  font-size: 14px;
+  color:green;
+  margin: 0; /* Remove margin */
+  display: block;
+  }
+
+    .sidebar .submenu {
+    padding-left: 20px;
+    
+  }
+
+#home{
+    margin-top: 140px;
+}
+
+  .section {
+
+    scroll-margin-top: 180px; /* Adjust this value to the height of your header */
+    color: #3B5998;
+  }
+
+
+  .banner {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+  }
+
+
+  .content {
+    margin-left: 250px;
+    padding: 20px;
+    width: calc(100% - 250px);
+    overflow-y: auto; /* Add vertical scrollbar to content */
+ 
+    
+    
+  }
+
+
+
+
+/* main {
+    margin-left: 250px; 
+    padding: 20px;
+    width: calc(100% - 250px); 
+    flex-grow: 1;
+    overflow: auto;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+} */
+
+.hamburger {
+    font-size: 36px;
+    color: blue;
+    cursor: pointer;
+    display: none;
+
+}
+
+#hamburger {
+    
+    top: 10px; /* Adjust the position from the top of the viewport */
+    
+    z-index: 1000; /* Ensure it stays above other elements */
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        justify-content: space-between;
+        padding: 10px;
+    }
+    #home{
+        margin-top: 190px;
+    }
+    .main {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        /* position: relative; */
+        padding-top: 0;
+        transform: translateX(-100%);/* Sidebar hidden by default */
+        transition: transform 0.3s ease;
+        margin-top: 80px; /* Adjust this value to the height of your header */
+    }
+
+    .sidebar.active {
+        transform: translateX(0);/* Sidebar visible when active */
+    }
+
+
+    
+    .content {
+        margin-left: 0;
+        width: 100%;
+    }
+    .section {
+
+        scroll-margin-top: 230px; /* Adjust this value to the height of your header */
+        color: #3B5998;
+      }
+    
+    
+    .hamburger {
+        display: block;
+    }
+}
+
+
+
+.toggle-sidebar {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .toggle-sidebar {
+        display: block;
+    }
+}
