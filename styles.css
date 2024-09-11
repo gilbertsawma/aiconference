@@ -34,11 +34,15 @@ header {
     align-items: center;
     flex-wrap: wrap;
   }
-  .logo img {
-    max-height: 140px;
-    
-  }
+  
 
+
+  .logo img {
+    max-width: 100%; /* Ensure images scale correctly */
+
+    max-height: 140px;
+
+}
 
 .main {
     display: flex;
@@ -112,6 +116,12 @@ header {
     margin-top: 140px;
 }
 
+
+#home h3, h1, p{
+    
+    font-weight: bold;
+
+}
   .section {
 
     scroll-margin-top: 180px; /* Adjust this value to the height of your header */
@@ -201,37 +211,38 @@ main img {
         opacity: 0.7;
     }
 
-    .pdf-container {
-        width: 100%;
-        height: 100vh; /* 100% of the viewport height */
-        overflow: hidden; /* Prevent any scrollbars */
-        display: flex;
-        justify-content: center; /* Center the PDF horizontally */
-        align-items: center; /* Center the PDF vertically */
-    }
-
-    .pdf-container object {
-        width: 100%;
-        height: 100%;
-        object-fit: contain; /* Ensures PDF fits within the container */
-        border: none; /* Remove any borders around the PDF */
-    }
-
 
     .gallery-item {
         position: relative;
         overflow: hidden;
         width: 100%;
         padding-top: 100%; /* 1:1 Aspect Ratio */
+        
     }
     .gallery-item img {
         position: absolute;
         top: 0;
         left: 0;
-        width: 98%;
-        height: 98%;
+        width: 100%;
+        height: 100%;
         object-fit: cover; /* Cover the container while preserving aspect ratio */
     }
+
+    .col-md-4 {
+        padding: 5px; /* Space between columns */
+        
+    }
+
+    .toggle-sidebar {
+        background-color: #333;
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        display: none;
+    }
+
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     header {
@@ -275,18 +286,12 @@ main img {
     .hamburger {
         display: block;
     }
+
 }
 
 
 
-.toggle-sidebar {
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    display: none;
-}
+
 
 @media (max-width: 768px) {
     .toggle-sidebar {
