@@ -289,4 +289,11 @@ main img {
         display: block;
     }
 
+
+    .logo img {
+        width: 25%; /* Reduce logo size on small screens */
+        
+    }
+
+
 }
