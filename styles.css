@@ -292,7 +292,7 @@ main img {
 
 
     .logo img {
-        width: 30%; /* Reduce logo size on small screens */
+        width: 20%; /* Reduce logo size on small screens */
         
     }
 }
