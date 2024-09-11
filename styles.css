@@ -217,6 +217,21 @@ main img {
         border: none; /* Remove any borders around the PDF */
     }
 
+
+    .gallery-item {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 100%; /* 1:1 Aspect Ratio */
+    }
+    .gallery-item img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 98%;
+        height: 98%;
+        object-fit: cover; /* Cover the container while preserving aspect ratio */
+    }
 /* Responsive Styles */
 @media (max-width: 768px) {
     header {
