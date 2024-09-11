@@ -38,10 +38,7 @@ header {
 
 
   .logo img {
-    max-width: 100%; /* Ensure images scale correctly */
-
-    max-height: 140px;
-
+        max-height: 140px;
 }
 
 .main {
@@ -296,6 +293,6 @@ main img {
 
     .logo img {
         width: 30%; /* Reduce logo size on small screens */
-        margin: 10px auto;
+        
     }
 }
