@@ -117,7 +117,7 @@ header {
 }
 
 
-#home h3, h1, p{
+#home  p{
     
     font-weight: bold;
 
@@ -287,14 +287,15 @@ main img {
         display: block;
     }
 
-}
 
-
-
-
-
-@media (max-width: 768px) {
     .toggle-sidebar {
         display: block;
+    }
+
+
+
+    .logo img {
+        width: 30%; /* Reduce logo size on small screens */
+        margin: 10px auto;
     }
 }
