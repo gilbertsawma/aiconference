@@ -49,7 +49,7 @@
       <div class="menu-item"><a href="#home">الصفحة الرئيسية </a></div>
 
       <div class="menu-item"><a href="#objectives">أهداف المؤتمر</a></div>
-      <div class="menu-item"><a href="#committee">تنظيم المؤتمر (اللجان)</a></div>
+      <div class="menu-item"><a href="#committee">تنظيم المؤتمر</a></div>
       <div class="menu-item"><a href="#Speeches">كلمات افتتاح المؤتمر</a>
         <div class="submenu">
           <div class="submenu-item"><a href="#ministerSpeech">كلمة وزير التربية والتعليم العالي</a></div>
@@ -85,13 +85,12 @@
 
       <div id="objectives" class="jumbotron container section">
         <h2>أهداف المؤتمر</h2>
-        <img src="Objectives.png" alt="Objectives" class="banner section">
-
+        <iframe src="Objectives.htm" style="width:100%; height:150px; border:none;"></iframe>
       </div>
       <div id="committee" class="jumbotron container section">
-        <h2>تنظيم المؤتمر (اللجان)</h2>
+        <h2>تنظيم المؤتمر</h2>
         
-        <img src="Committee.png" alt="Committee" class="banner section">
+        <iframe src="Committee.htm" style="width:100%; height:900px; border:none;"></iframe>
       </div>
 
       <div id="Speeches" class=" container section">
@@ -106,18 +105,18 @@
 
 
         <div id="presidentSpeech" class="jumbotron container section">
-          <h3>كلمة رئيس الجامعة اللبنانية بروفيسور بسام بدران</h3>
+          <h3>كلمة رئيس الجامعة اللبنانية البروفيسور بسام بدران</h3>
           <iframe src="كلمة رئيس الجامعة اللبنانية.htm" style="width:100%; height:850px; border:none;"></iframe>
         </div>
 
 
         <div id="deanSpeech" class="jumbotron container section">
-          <h3>كلمة عميد كلية التربية بروفيسور خليل الجمال</h3>
+          <h3>كلمة عميد كلية التربية البروفيسور خليل الجمال</h3>
           <iframe src="كلمة عميد كلية التربية.htm" style="width:100%; height:1550px; border:none;"></iframe>
         </div>
 
         <div id="cersSpeech" class="jumbotron container section">
-          <h3>كلمة رئيسةِ مركز الدراسات والأبحاث التربوية في كلية التربية بروفيسور إيمان خليل</h3>
+          <h3>كلمة رئيسةِ مركز الدراسات والأبحاث التربوية في كلية التربية البروفيسور إيمان خليل</h3>
           <iframe src="كلمة رئيسةِ مركز الدراسات والأبحاث التربوية في كلية التربية.htm"
             style="width:100%; height:1300px; border:none;"></iframe>
         </div>
@@ -446,6 +445,20 @@
         e.stopPropagation(); // Prevent event propagation to parent menu-item
       });
     });
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+
+    const targetElement = document.querySelector(this.getAttribute('href'));
+    const headerHeight = document.querySelector('.header').offsetHeight;
+
+    window.scrollTo({
+      top: targetElement.offsetTop - headerHeight, // Offset by the height of the fixed header
+      // behavior: 'smooth'
+    });
+  });
+});
   </script>
 
 
