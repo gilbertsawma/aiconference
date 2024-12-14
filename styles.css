@@ -112,6 +112,7 @@ body {
     text-align: center;
     flex-grow: 1;
     margin: 0 30px;
+    padding: 10px 0;
     /* Space between the logos and text */
     background-image: url("./Photos/Picture_1.jpg");
 
