@@ -386,10 +386,8 @@ main img {
     }
 
 
-    .header-text h3,
-    h1,
-    h4 {
-        font-size: 130%;
+    .header-text h3, h2, h1, h4, h5{
+        font-size: 120%;
         font-weight: bold;
         text-align: center;
         /* flex-grow: 1; */
