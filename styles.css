@@ -386,7 +386,7 @@ main img {
     }
 
 
-    .header-text h3, h2, h1, h4, h5{
+    .header-text h3, h2, h1, h4{
         font-size: 120%;
         font-weight: bold;
         text-align: center;
@@ -398,7 +398,19 @@ main img {
 
         /* height: 100px; */
     }
+        .header-text h5{
+        font-size: 100%;
+        font-weight: bold;
+        text-align: center;
+        /* flex-grow: 1; */
+        margin: 0 30px;
+        padding: 10px 0;
+        /* Space between the logos and text */
+        background-image: url("./Photos/Background.jpg");
 
+        /* height: 100px; */
+    }
+    
     #home {
         
         scroll-margin-top: 150px; /* Offset to account for the header */
