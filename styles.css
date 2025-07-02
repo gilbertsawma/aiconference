@@ -381,25 +381,15 @@ main img {
 @media (max-width: 768px) {
     .header {
         justify-content: space-around;
-        padding: 0px;
+        padding: 10px;
 
     }
 
 
-    .header-text h3, h2, h1{
-        font-size: 120%;
-        font-weight: bold;
-        text-align: center;
-        /* flex-grow: 1; */
-        margin: 0 30px;
-        padding: 10px 0;
-        /* Space between the logos and text */
-        background-image: url("./Photos/Background.jpg");
-
-        /* height: 100px; */
-    }
-        .header-text h4{
-        font-size: 100%;
+    .header-text h3,
+    h1,
+    h4 {
+        font-size: 130%;
         font-weight: bold;
         text-align: center;
         /* flex-grow: 1; */
