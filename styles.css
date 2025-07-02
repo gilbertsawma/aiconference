@@ -381,12 +381,12 @@ main img {
 @media (max-width: 768px) {
     .header {
         justify-content: space-around;
-        padding: 10px;
+        padding: 0px;
 
     }
 
 
-    .header-text h3, h2, h1, h4{
+    .header-text h3, h2, h1{
         font-size: 120%;
         font-weight: bold;
         text-align: center;
@@ -398,7 +398,7 @@ main img {
 
         /* height: 100px; */
     }
-        .header-text h5{
+        .header-text h4{
         font-size: 100%;
         font-weight: bold;
         text-align: center;
@@ -410,7 +410,7 @@ main img {
 
         /* height: 100px; */
     }
-    
+
     #home {
         
         scroll-margin-top: 150px; /* Offset to account for the header */
